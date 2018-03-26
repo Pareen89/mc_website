@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meditation Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div id="hide">
+    <header class="intro">
+        <h1>Meditation Countdown</h1>
+        <p>Purpose of this app is for you to be able to keep focus while meditating. While meditating you will set a timer on this app and you will hear a stream of water random sounds of water drips throughout the countdown. You will need to keep count of the water drips. After the count down has ended you will imput the number of times you heard the water drip and see if you were able to keep count of all the water drips. </p>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <td>Hours</td>
+                <td>Minutes</td>
+                <td>Seconds</td>
+            </tr>
+            <tr>
+                <td><input class="display"id="hours" type="number" name="hours" min="0" value="0"></td>
+                <td><input class="display"id="minutes" type="number" name="minutes" min="0" max="59" value="0"></td>
+                <td><input class="display"id="seconds" type="number" name="seconds" min="0" max="59" value="0"></td>
+            </tr>
+            
+        </table>
+        
+  
+    </main>
+    </div>
+    <button type="button" class="button" id="start" onclick="timer(); hide();start(); buttonDisplay();">Start</button>
+    <button type="button" class="button" id="reset"onclick="window.location.reload()" style="display:none">Reset</button>
+    
+
+    <div class="timer">
+        <h1 class="display_time_left"></h1> 
+    </div>
+    <form id="num-of-drips" style="display: none"> 
+        Number Of Drips Heard:<br>
+        <input type="number" class="guess display">
+        <button type="button" class="button" onclick="showDrips();">Submit</button>
+    </form>
+
+    <h1 id="what" style="display:none"></h1>
+    
+
+<audio id="waterSound" src="water.mp3"></audio>
+<audio id="dripSound" src="drips.mp3"></audio>
+<video loop id="myVideo"src="video.mp4"></video>
+<script src="main.js"></script>
+</body>
+</html>

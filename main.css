@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:rgba(0, 0, 0, 0.5);
+    color:white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro p{
+  padding: 0 15% 0 15%;
+}
+
+#countDown{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    
+
+}
+
+.display{
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+
+table{
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bolder;
+    
+}
+jbutton{
+    display: block;
+    margin: auto;
+    float: none;
+}
+
+
+.display_time_left{
+    text-align: center;
+    font-size: 100px;
+}
+
+#num-of-drips{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    
+    
+}
+
+.button{
+     background-color: gray;
+     border: solid black;
+     color: white;
+     height: 50px;
+     width: 85px;
+     text-align: center;
+     text-decoration: none;
+     display: block;
+     font-size: 16px;
+     margin: auto;
+     
+     ;
+}
+
+#what{
+    text-align: center;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
